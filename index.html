@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flexbox Responsive</title>
+    <style>
+          .box{
+            border: 2px solid black;
+            height: 200px;
+            display: flex;
+           
+          }
+
+          .left{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: 900;
+            background: rgba(185, 77, 77);
+          }
+
+          .Right{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: 900;
+            background: rgba(168, 5, 5);
+          }
+
+          @media screen and (max-width:567px) {
+            .box{
+                display: block;
+            }
+
+            .left{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: 900;
+            background: rgba(185, 77, 77);
+          }
+
+          .Right{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: 900;
+            background: rgba(168, 5, 5);
+          }
+
+
+          }
+
+    </style>
+</head>
+<body>
+    <section class="box">
+        <div class="left">Left</div>
+        <div class="Right">Right</div>
+    </section>
+
+</body>
+</html>
