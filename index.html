@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Flexbox Responsive</title>
     <style>
-          .box{
+        .box {
             border: 2px solid black;
             height: 200px;
             display: flex;
-           
-          }
 
-          .left{
+        }
+
+        .left {
+            margin: 3px;
             width: 50%;
             display: flex;
             justify-content: center;
@@ -20,9 +22,11 @@
             font-size: larger;
             font-weight: 900;
             background: rgba(185, 77, 77);
-          }
+            border-radius: 10px;
+        }
 
-          .Right{
+        .Right {
+            margin: 3px;
             width: 50%;
             display: flex;
             justify-content: center;
@@ -30,40 +34,46 @@
             font-size: larger;
             font-weight: 900;
             background: rgba(168, 5, 5);
-          }
+            border-radius: 10px;
+        }
 
-          @media screen and (max-width:567px) {
-            .box{
+        @media screen and (max-width:567px) {
+            .box {
                 display: block;
+                height: 200px;
+                
+                
             }
 
-            .left{
-            height: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: larger;
-            font-weight: 900;
-            background: rgba(185, 77, 77);
-          }
+            .left {
+               
+                height: 48%;
+                width: 99%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: larger;
+                font-weight: 900;
+                background: rgba(185, 77, 77);
+            }
 
-          .Right{
-            height: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: larger;
-            font-weight: 900;
-            background: rgba(168, 5, 5);
-          }
+            .Right {
+                
+                height: 48%;
+                width: 99%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: larger;
+                font-weight: 900;
+                background: rgba(168, 5, 5);
+            }
 
 
-          }
-
+        }
     </style>
 </head>
+
 <body>
     <section class="box">
         <div class="left">Left</div>
@@ -71,4 +81,5 @@
     </section>
 
 </body>
+
 </html>
